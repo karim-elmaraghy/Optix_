@@ -1,0 +1,363 @@
+{
+  "source": "artifact_validation (not a Meta proposal)",
+  "prompt_version": "v2-chat-template",
+  "artifact_sha256": {
+    "benchmark_20261104T211417.json": "b6a4265c9f3d2745fef327e60d28b4cd93aadf33d59ad8aa153a65dc1270e320",
+    "outputs_default_fp16_sdpa_b1.json": "a37e5ba34ac19a5c87a7244685a30c08c688779ee77408395f9b3fb4c8c47a41",
+    "outputs_fp16_sdpa_b1_cap64.json": "c181fd9269174cdd4a4446dcbfabbdbcc11c3adde0ab61d3b3b57dd03006e8d1",
+    "outputs_fp16_sdpa_b4.json": "dbd3d40db5e5a1b3298d25d94495b9571ef526ccd427addbcdc2df3ba5a10013",
+    "outputs_fp16_sdpa_b8.json": "e43761440aab65e23e376dfe5f0e3ce621ee9a11eab60d1096ea5ea77fe63a0f",
+    "outputs_naive_fp32_eager_b1.json": "89f0cf202f0f8b67c83d84f2ea37c41ebfcd0d21f45d708dcffe247f8e125518"
+  },
+  "calibration": "blocked",
+  "profiles": {
+    "naive_fp32_eager_b1": {
+      "config": {
+        "dtype": "float32",
+        "attn": "eager",
+        "batch": 1,
+        "compile": false,
+        "max_new_tokens": 128
+      },
+      "reasons": [
+        "truncation"
+      ],
+      "flagged_docs": [
+        {
+          "doc_id": "cnn-test-2",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-12",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-15",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-17",
+          "reasons": [
+            "truncation"
+          ]
+        }
+      ],
+      "doc_count": 20,
+      "t5": null,
+      "quality_approved": false,
+      "mean_token_f1_vs_default": 0.9539412104475753,
+      "mean_gold_rouge_l": 0.17738764310429458,
+      "timing_repeats_sufficient": false
+    },
+    "default_fp16_sdpa_b1": {
+      "config": {
+        "dtype": "float16",
+        "attn": "sdpa",
+        "batch": 1,
+        "compile": false,
+        "max_new_tokens": 128
+      },
+      "reasons": [
+        "truncation"
+      ],
+      "flagged_docs": [
+        {
+          "doc_id": "cnn-test-1",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-2",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-12",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-15",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-17",
+          "reasons": [
+            "truncation"
+          ]
+        }
+      ],
+      "doc_count": 20,
+      "t5": null,
+      "quality_approved": false,
+      "mean_token_f1_vs_default": 1.0,
+      "mean_gold_rouge_l": 0.18047342189642301,
+      "timing_repeats_sufficient": false
+    },
+    "fp16_sdpa_b4": {
+      "config": {
+        "dtype": "float16",
+        "attn": "sdpa",
+        "batch": 4,
+        "compile": false,
+        "max_new_tokens": 128
+      },
+      "reasons": [
+        "truncation"
+      ],
+      "flagged_docs": [
+        {
+          "doc_id": "cnn-test-1",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-2",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-12",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-15",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-17",
+          "reasons": [
+            "truncation"
+          ]
+        }
+      ],
+      "doc_count": 20,
+      "t5": {
+        "passed": true,
+        "min_f1": 1.0,
+        "mean_f1": 1.0
+      },
+      "quality_approved": false,
+      "mean_token_f1_vs_default": 1.0,
+      "mean_gold_rouge_l": 0.18047342189642301,
+      "timing_repeats_sufficient": false
+    },
+    "fp16_sdpa_b8": {
+      "config": {
+        "dtype": "float16",
+        "attn": "sdpa",
+        "batch": 8,
+        "compile": false,
+        "max_new_tokens": 128
+      },
+      "reasons": [
+        "truncation"
+      ],
+      "flagged_docs": [
+        {
+          "doc_id": "cnn-test-1",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-2",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-12",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-15",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-17",
+          "reasons": [
+            "truncation"
+          ]
+        }
+      ],
+      "doc_count": 20,
+      "t5": {
+        "passed": true,
+        "min_f1": 1.0,
+        "mean_f1": 1.0
+      },
+      "quality_approved": false,
+      "mean_token_f1_vs_default": 1.0,
+      "mean_gold_rouge_l": 0.18047342189642301,
+      "timing_repeats_sufficient": false
+    },
+    "fp16_sdpa_b1_cap64": {
+      "config": {
+        "dtype": "float16",
+        "attn": "sdpa",
+        "batch": 1,
+        "compile": false,
+        "max_new_tokens": 64
+      },
+      "reasons": [
+        "truncation"
+      ],
+      "flagged_docs": [
+        {
+          "doc_id": "cnn-test-0",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-1",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-2",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-3",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-4",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-5",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-6",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-7",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-8",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-11",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-12",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-13",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-14",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-15",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-16",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-17",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-18",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-19",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-20",
+          "reasons": [
+            "truncation"
+          ]
+        },
+        {
+          "doc_id": "cnn-test-21",
+          "reasons": [
+            "truncation"
+          ]
+        }
+      ],
+      "doc_count": 20,
+      "t5": null,
+      "quality_approved": false,
+      "mean_token_f1_vs_default": 0.7313519195847663,
+      "mean_gold_rouge_l": 0.20869897143103203,
+      "timing_repeats_sufficient": false
+    }
+  },
+  "remaining_checks": [
+    "T3 requires at least 3 repeats; all supplied profiles have 2",
+    "heldout artifacts absent",
+    "T1 determinism rerun absent",
+    "T2 polling crosscheck console evidence absent"
+  ]
+}

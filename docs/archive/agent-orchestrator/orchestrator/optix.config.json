@@ -1,0 +1,31 @@
+{
+  "_comment": "Optix orchestrator config. No secrets here.",
+  "repo": "karim-elmaraghy/Optix_",
+  "boardIssue": 1,
+  "baseBranch": "main",
+  "worktreeRoot": "../Optix_-work",
+  "maxConcurrent": 1,
+  "workerOrder": [ "muse" ],
+  "defaultTimeoutMin": 30,
+  "defaultRetries": 1,
+  "defaultMaxModelSteps": 50,
+  "reasoningEffort": "high",
+  "approvalMode": "on-request",
+  "allowFallback": false,
+  "budgets": {
+    "muse": { "tasksPerDay": 10 },
+    "codex": { "tasksPerDay": 0 },
+    "copilot": { "tasksPerDay": 0 }
+  },
+  "lanes": {
+    "muse": {
+      "enabled": true,
+      "executable": "C:\\Users\\karim\\AppData\\Local\\Programs\\muse\\muse.cmd",
+      "requiredFlags": [ "--workspace", "--json", "--max-model-steps", "--approval-mode" ],
+      "optionalFlags": [ "--worktree-existing" ],
+      "bannedFlags": [ "--yolo", "--disable-sandbox" ]
+    },
+    "codex": { "enabled": false, "reason": "CLI not installed or interface not verified" },
+    "copilot": { "enabled": false, "reason": "CLI not installed or interface not verified" }
+  }
+}

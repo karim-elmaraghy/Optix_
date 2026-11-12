@@ -1,0 +1,76 @@
+{
+  "kind": "measured",
+  "state": "blocked",
+  "prompt_version": "v2-chat-template",
+  "winner": null,
+  "source": "user-supplied Colab archive; locally validated without GPU execution",
+  "reasons": [
+    "truncation"
+  ],
+  "diagnostics": [
+    {
+      "baseline": "competent_default",
+      "doc_id": "cnn-test-1",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "competent_default",
+      "doc_id": "cnn-test-2",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "competent_default",
+      "doc_id": "cnn-test-12",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "competent_default",
+      "doc_id": "cnn-test-15",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "competent_default",
+      "doc_id": "cnn-test-17",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "naive",
+      "doc_id": "cnn-test-2",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "naive",
+      "doc_id": "cnn-test-12",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "naive",
+      "doc_id": "cnn-test-15",
+      "reasons": [
+        "truncation"
+      ]
+    },
+    {
+      "baseline": "naive",
+      "doc_id": "cnn-test-17",
+      "reasons": [
+        "truncation"
+      ]
+    }
+  ],
+  "message": "Calibration blocked: invalid baseline outputs (truncation)"
+}

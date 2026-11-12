@@ -1,0 +1,170 @@
+[
+  {
+    "dtype": "float32",
+    "attn": "eager",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float32",
+    "attn": "eager",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float32",
+    "attn": "eager",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float32",
+    "attn": "eager",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float32",
+    "attn": "eager",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float32",
+    "attn": "eager",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float32",
+    "attn": "sdpa",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float32",
+    "attn": "sdpa",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float32",
+    "attn": "sdpa",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float32",
+    "attn": "sdpa",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float32",
+    "attn": "sdpa",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float32",
+    "attn": "sdpa",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float16",
+    "attn": "eager",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float16",
+    "attn": "eager",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float16",
+    "attn": "eager",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float16",
+    "attn": "eager",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float16",
+    "attn": "eager",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float16",
+    "attn": "eager",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 1,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 64
+  },
+  {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 8,
+    "compile": false,
+    "max_new_tokens": 64
+  }
+]
