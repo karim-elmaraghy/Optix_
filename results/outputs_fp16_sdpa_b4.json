@@ -1,0 +1,152 @@
+{
+  "profile_name": "fp16_sdpa_b4",
+  "config": {
+    "dtype": "float16",
+    "attn": "sdpa",
+    "batch": 4,
+    "compile": false,
+    "max_new_tokens": 128
+  },
+  "docs": [
+    {
+      "doc_id": "cnn-test-0",
+      "split": "tuning",
+      "output_text": "The Palestinian Authority has officially become the 123rd member of the International Criminal Court (ICC), marking a significant step towards greater justice and accountability for alleged crimes in Palestinian territories. The Palestinians signed the ICC's founding Rome Statute in January, and after a preliminary examination, the ICC opened a case against Israelis, paving the way for possible war crimes investigations. Palestinian Foreign Minister Riad al-Malki hailed the move as a step towards ending impunity and injustice, saying it brings the world closer to achieving shared goals.",
+      "n_output_tokens": 104,
+      "gold_summary": "Membership gives the ICC jurisdiction over alleged crimes committed in Palestinian territories since last June .\nIsrael and the United States opposed the move, which could open the door to war crimes investigations against Israelis ."
+    },
+    {
+      "doc_id": "cnn-test-1",
+      "split": "tuning",
+      "output_text": "A stray dog in Washington State, named Theia, has survived a series of traumatic events, including being hit by a car, buried in a field, and buried alive, but has been rescued and is receiving care at a veterinary hospital. Theia, a friendly bully breed mix, was found four days after her apparent death and was taken in by a local resident, Sara Mellado, who is now caring for her. Despite her injuries, including a dislocated jaw, leg injuries, and a caved-in sinus cavity, Theia is described as gentle and loving, and is receiving treatment and care at the veterinary hospital's Good Samar",
+      "n_output_tokens": 128,
+      "gold_summary": "Theia, a bully breed mix, was apparently hit by a car, whacked with a hammer and buried in a field .\n\"She's a true miracle dog and she deserves a good life,\" says Sara Mellado, who is looking for a home for Theia ."
+    },
+    {
+      "doc_id": "cnn-test-2",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nMohammad Javad Zarif, the Iranian foreign minister, has been a key figure in securing a breakthrough in nuclear discussions with the US, and has received a hero's welcome in Iran after arriving there on a sunny Friday morning. However, less well-known facts about Zarif include that he tweeted \"Happy Rosh Hashanah\" in September 2013, and that his daughter Christine Pelosi responded to his tweet with a similar message. Zarif has also been praised for his \"polished\" and \"jovial\" demeanor, despite the weighty issues he has faced in his role",
+      "n_output_tokens": 128,
+      "gold_summary": "Mohammad Javad Zarif has spent more time with John Kerry than any other foreign minister .\nHe once participated in a takeover of the Iranian Consulate in San Francisco .\nThe Iranian foreign minister tweets in English ."
+    },
+    {
+      "doc_id": "cnn-test-3",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nFive American healthcare workers who were exposed to Ebola in West Africa and monitored at an Omaha, Nebraska, hospital have been released after three weeks. The workers, who are clinicians for Partners in Health, had contact with a colleague who was diagnosed with Ebola and is being treated at the National Institutes of Health. As of Monday, the last of 17 patients being monitored is expected to be released by Thursday, with over 10,000 people dying from the epidemic since December 2013.",
+      "n_output_tokens": 107,
+      "gold_summary": "17 Americans were exposed to the Ebola virus while in Sierra Leone in March .\nAnother person was diagnosed with the disease and taken to hospital in Maryland .\nNational Institutes of Health says the patient is in fair condition after weeks of treatment ."
+    },
+    {
+      "doc_id": "cnn-test-4",
+      "split": "tuning",
+      "output_text": "A Duke University student admitted to hanging a noose made of rope from a tree near the student union, citing federal privacy laws. The incident occurred early Wednesday morning, and the student was identified during an investigation by campus police and the office of student affairs. The university has placed the student on student conduct review and is investigating whether other individuals were involved, with hundreds of students and faculty members gathering on campus to express their support and solidarity.",
+      "n_output_tokens": 88,
+      "gold_summary": "Student is no longer on Duke University campus and will face disciplinary review .\nSchool officials identified student during investigation and the person admitted to hanging the noose, Duke says .\nThe noose, made of rope, was discovered on campus about 2 a.m."
+    },
+    {
+      "doc_id": "cnn-test-5",
+      "split": "tuning",
+      "output_text": "Trey Moses, a high school basketball star, asked Ellie Meredith, a freshman with Down syndrome, to be his prom date after initially planning to take his girlfriend to the event. The two were vastly different, but Trey's kind and thoughtful gesture caught the attention of Trina Helson, a teacher at Eastern High School, who posted photos of the prom-posal on Twitter, making it a viral sensation. Trey's actions showed that he is a caring and considerate person, and Ellie was reportedly thrilled to accept his invitation.",
+      "n_output_tokens": 107,
+      "gold_summary": "College-bound basketball star asks girl with Down syndrome to high school prom .\nPictures of the two during the \"prom-posal\" have gone viral ."
+    },
+    {
+      "doc_id": "cnn-test-6",
+      "split": "tuning",
+      "output_text": "Governments around the world are using the threat of terrorism to justify executions, according to Amnesty International's annual report. The report cites examples such as Pakistan lifting a moratorium on civilian executions after a school attack and China's \"Strike Hard\" campaign against terrorism in Xinjiang, highlighting the \"dark trend\" of using the death penalty as a tool for deterrence. Despite this, the number of executions worldwide has decreased by almost 22% in 2014, according to the report.",
+      "n_output_tokens": 99,
+      "gold_summary": "Amnesty's annual death penalty report catalogs encouraging signs, but setbacks in numbers of those sentenced to death .\nOrganization claims that governments around the world are using the threat of terrorism to advance executions .\nThe number of executions worldwide has gone down by almost 22% compared with 2013, but death sentences up by 28% ."
+    },
+    {
+      "doc_id": "cnn-test-7",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nAndrew Getty, one of the heirs to a vast oil fortune, has died of natural causes at the age of 47, according to a Los Angeles Police Department spokesman. The coroner's preliminary assessment indicates that there was no foul play involved in Getty's death, and an autopsy will be conducted to determine the cause of death. Getty's parents, Ann and Gordon Getty, have released a statement confirming their son's passing and asking for privacy, while also releasing information about his health issues and the recovery of medication from his home.",
+      "n_output_tokens": 116,
+      "gold_summary": "Andrew Getty's death appears to be from natural causes, police say, citing coroner's early assessment .\nIn a petition for a restraining order, Getty had written he had a serious medical condition.\nPolice say this is not a criminal matter at this time ."
+    },
+    {
+      "doc_id": "cnn-test-8",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nTropical storm Maysak, which gained super typhoon status just a few days ago, is now classified as a tropical storm and is expected to bring flash floods and landslides to the Asian island nation of the Philippines. The storm boasts steady winds of over 70 mph and gusts up to 90 mph, prompting authorities to take precautions such as barring outdoor activities and issuing evacuation orders. Tourists arriving in the coastal town of Aurora are advised to return to their hotels and resorts, and those who arrive are not allowed to stay in certain areas.",
+      "n_output_tokens": 122,
+      "gold_summary": "Once a super typhoon, Maysak is now a tropical storm with 70 mph winds .\nIt could still cause flooding, landslides and other problems in the Philippines ."
+    },
+    {
+      "doc_id": "cnn-test-11",
+      "split": "tuning",
+      "output_text": "Paul Walker's death in a car crash in 2013 was a shock to fans of the \"Fast and Furious\" franchise, which he rose to fame with. The release of \"Furious 7\" offers a chance for fans to remember and grieve the actor, who was known for his humility, integrity, and compassion. Walker secretly paid for an engagement ring for his bride, which was later purchased by a military veteran, Kyle Upham, who praised Walker's kindness and generosity.",
+      "n_output_tokens": 100,
+      "gold_summary": "\"Furious 7\" pays tribute to star Paul Walker, who died during filming .\nVin Diesel: \"This movie is more than a movie\"\n\"Furious 7\" opens Friday ."
+    },
+    {
+      "doc_id": "cnn-test-12",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nNew research by the Anne Frank House has revealed that Anne Frank and her older sister Margot Frank likely died in the Bergen-Belsen concentration camp in Germany, rather than in the Auschwitz-Birkenau camp in Poland, where they were initially believed to have perished. The research, which re-examined archives and testimonies from survivors, suggests that the sisters may have died at least a month earlier than previously thought, contradicting the date of death previously determined by Dutch authorities. The sisters were separated from their mother and sent to work as slave labor at Bergen-Belsen, where they faced",
+      "n_output_tokens": 128,
+      "gold_summary": "Museum: Anne Frank died earlier than previously believed .\nResearchers re-examined archives and testimonies of survivors .\nAnne and older sister Margot Frank are believed to have died in February 1945 ."
+    },
+    {
+      "doc_id": "cnn-test-13",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nMike Pence, the former Vice President of the United States, has been drawing criticism for signing a religious freedom law in Indiana that opens the door to discrimination against the LGBTQ+ community. Pence's decision to sign the law has been seen as a move to shore up his conservative credentials and secure a spot as a potential 2016 presidential candidate, despite the pleas of the Indiana Chamber of Commerce and other groups. This move is also seen as a response to Republican Jeb Bush, who was quick to defend Pence and the law, highlighting the divisions within the Republican Party.",
+      "n_output_tokens": 122,
+      "gold_summary": "LZ: Indiana law pushing back LGBT rights, and other states' anti-LGBT moves, bow to far right wing that GOP candidates need for 2016 .\nCruz, Huckabee, Jindal, Carson, Walker are reviving culture wars, he says.  Equality for LGBT has not yet \"won\" in America ."
+    },
+    {
+      "doc_id": "cnn-test-14",
+      "split": "tuning",
+      "output_text": "Famous performers who have tackled the American national anthem, such as Vince Neil, Whitney Houston, and Jimi Hendrix, have faced varying reactions. While some, like Neil, have been praised for their renditions, others, like Roseanne Barr and Whitney Houston, have been met with criticism and even presidential disapproval. The most infamous version of the anthem is likely Jimi Hendrix's 1969 performance, which inflamed mainstream America.",
+      "n_output_tokens": 91,
+      "gold_summary": "Singing the national anthem is a risky proposition .\nWhitney Houston nailed it; Roseanne Barr destroyed it ."
+    },
+    {
+      "doc_id": "cnn-test-15",
+      "split": "tuning",
+      "output_text": "Walmart's stance on a proposed religious freedom law in Arkansas has sparked criticism from prominent figures, including Apple CEO Tim Cook and NCAA officials, who warn that it could lead to discrimination against gay and lesbian customers. The company's decision to boost pay for 500,000 workers above the federal minimum wage is seen as a sign of growing support for gay rights in the heartland, where conservative and liberal opinions are increasingly diverging. Some prominent Republicans, including former Minnesota Governor Tim Pawlenty, are urging the party to take notice and better stand for helping the middle class, as Walmart's actions are seen as a bellwether for shifting",
+      "n_output_tokens": 128,
+      "gold_summary": "While Republican Gov. Asa Hutchinson was weighing an Arkansas religious freedom bill, Walmart voiced its opposition .\nWalmart and other high-profile businesses are showing their support for gay and lesbian rights .\nTheir stance puts them in conflict with socially conservative Republicans, traditionally seen as allies ."
+    },
+    {
+      "doc_id": "cnn-test-16",
+      "split": "tuning",
+      "output_text": "In May 2014, a mass sentencing of 55 prisoners in China's Xinjiang region was held, with three receiving the death penalty. The public trial was part of China's \"Strike Hard\" campaign against unrest in the region, but Amnesty International has criticized the use of the death penalty as a misguided attempt to tackle crime and terrorism. In recent years, the death penalty has been used in several countries, including Pakistan, where over 60 people have been executed in the wake of a Taliban attack on a school.",
+      "n_output_tokens": 106,
+      "gold_summary": "Amnesty International releases its annual review of the death penalty worldwide; much of it makes for grim reading .\nSalil Shetty: Countries that use executions to deal with problems are on the wrong side of history ."
+    },
+    {
+      "doc_id": "cnn-test-17",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nThe French prosecutor investigating the crash of Germanwings Flight 9525 has stated that he was not aware of any video footage from on board the plane, contradicting claims by two magazines that a cell phone video showed the harrowing final seconds of the crash. The two magazines, Bild and Paris Match, reported that the video was recovered from a phone at the wreckage site and showed the plane's final moments, including cries of \"My God\" and metallic banging. The prosecutor's comments have sparked controversy, with some questioning the authenticity of the video and others defending the publications' right to publish it",
+      "n_output_tokens": 128,
+      "gold_summary": "Marseille prosecutor says \"so far no videos were used in the crash investigation\" despite media reports .\nJournalists at Bild and Paris Match are \"very confident\" the video clip is real, an editor says .\nAndreas Lubitz had informed his Lufthansa training school of an episode of severe depression, airline says ."
+    },
+    {
+      "doc_id": "cnn-test-18",
+      "split": "tuning",
+      "output_text": "Rev. Robert H. Schuller, a 88-year-old televangelist and founder of \"Hour of Power,\" died Thursday after being diagnosed with esophageal cancer in August 2013. Schuller's life was marked by a remarkable arc, from a humble upbringing in Iowa to becoming a prominent figure in Christian ministry, where he preached from a drive-in theater and eventually founded Crystal Cathedral megachurch. His daughter-in-law, Donna Schuller, described him as a \"great Dad and a great man of God\" who passed away peacefully, leaving behind a legacy of his life's work.",
+      "n_output_tokens": 125,
+      "gold_summary": "The Rev. Robert Schuller, 88, had been diagnosed with esophageal cancer in 2013 .\nHis TV show, \"Hour of Power,\" was enormously popular in the 1970s and 1980s ."
+    },
+    {
+      "doc_id": "cnn-test-19",
+      "split": "tuning",
+      "output_text": "Michele Bachmann, a former US Representative, compared President Barack Obama to the co-pilot of the Germanwings flight that crashed in the French Alps, comparing Obama's Iran deal to the actions of Andreas Lubitz, who deliberately crashed the plane. Bachmann's comment sparked outrage, with many calling it \"inappropriate and divisive\" and accusing her of being \"despicable\". The comment was made in response to the investigation into the crash, which is still ongoing.",
+      "n_output_tokens": 97,
+      "gold_summary": "Former GOP representative compares President Obama to Andreas Lubitz .\nBachmann said with possible Iran deal, Obama will fly \"entire nation into the rocks\"\nReaction on social media? She was blasted by Facebook commenters ."
+    },
+    {
+      "doc_id": "cnn-test-20",
+      "split": "tuning",
+      "output_text": "A 1,000-foot long container ship in the middle of the ocean was spotted by the crew of the Houston Express, who initially thought it was a abandoned yacht. However, as they got closer, they saw a man on the boat, Louis Jordan, 37, who was waving for help and surprisingly in good condition despite being stranded for over two months after a storm capsized his 35-foot sailboat. Jordan had been drifting on the boat for months, unable to fix it, and was eventually rescued after two more capsizes.",
+      "n_output_tokens": 110,
+      "gold_summary": "Father: \"I know he went through what he went through\"\nLouis Jordan was found on his sailboat, which was listing and in bad shape, rescuer says .\nHe appears to be in good shape, physically and mentally ."
+    },
+    {
+      "doc_id": "cnn-test-21",
+      "split": "tuning",
+      "output_text": "Here is a 3-sentence summary:\n\nThe United States and its negotiating partners have reached a framework agreement with Iran that limits the country's nuclear program, effectively blocking it from building a nuclear weapon. Despite this, the agreement is likely to face pushback, as seen in recent attempts to block it, and will likely be met with more heat than light due to the involvement of dubious assumptions and doubtful assertions. The agreement's objective, which was initially stated as the total elimination of Iran's nuclear program, is actually the opposite, as it was never the intention of the US Congress or Netanyahu to eliminate Iran's program entirely.",
+      "n_output_tokens": 126,
+      "gold_summary": "Richard Klass: Iran framework agreement on nukes is strong, but opponents will cast doubts on this and try to obscure its facts .\nHe says the deal would cut uranium stockpile, centrifuges, implement rigorous inspections; it should be judged on merits, not disinformation ."
+    }
+  ]
+}

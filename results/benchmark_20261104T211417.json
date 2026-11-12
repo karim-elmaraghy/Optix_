@@ -1,0 +1,167 @@
+[
+  {
+    "profile_name": "naive_fp32_eager_b1",
+    "status": "success",
+    "error": null,
+    "requested_config": {
+      "dtype": "float32",
+      "attn": "eager",
+      "batch": 1,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "actual_config": {
+      "dtype": "float32",
+      "attn": "eager",
+      "batch": 1,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "repeats": 2,
+    "total_time_sec": {
+      "median": 63.26037026099999,
+      "min": 63.15301956500002,
+      "max": 63.36772095699996
+    },
+    "latency_p50_sec": 3.1762312309999743,
+    "latency_p95_sec": 3.774090685950034,
+    "docs_per_sec": 0.3161536980811824,
+    "tokens_per_sec": 35.96248315673449,
+    "joules_per_doc": 118.27926142321496,
+    "idle_power_w": 28.627199999999995,
+    "compile_time_sec": null,
+    "noisy": false
+  },
+  {
+    "profile_name": "default_fp16_sdpa_b1",
+    "status": "success",
+    "error": null,
+    "requested_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 1,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "actual_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 1,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "repeats": 2,
+    "total_time_sec": {
+      "median": 56.78892890100002,
+      "min": 56.314733054000044,
+      "max": 57.263124747999996
+    },
+    "latency_p50_sec": 2.8773452259999885,
+    "latency_p95_sec": 3.5454902509499218,
+    "docs_per_sec": 0.3521813210258983,
+    "tokens_per_sec": 39.796489275926504,
+    "joules_per_doc": 108.27414872826462,
+    "idle_power_w": 28.627199999999995,
+    "compile_time_sec": null,
+    "noisy": false
+  },
+  {
+    "profile_name": "fp16_sdpa_b4",
+    "status": "success",
+    "error": null,
+    "requested_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 4,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "actual_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 4,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "repeats": 2,
+    "total_time_sec": {
+      "median": 15.547910247499999,
+      "min": 15.545191343999932,
+      "max": 15.550629151000066
+    },
+    "latency_p50_sec": 0.7597815359999913,
+    "latency_p95_sec": 0.920229723999995,
+    "docs_per_sec": 1.2863465045545828,
+    "tokens_per_sec": 145.35715501466785,
+    "joules_per_doc": 29.43286818813841,
+    "idle_power_w": 28.627199999999995,
+    "compile_time_sec": null,
+    "noisy": false
+  },
+  {
+    "profile_name": "fp16_sdpa_b8",
+    "status": "success",
+    "error": null,
+    "requested_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 8,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "actual_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 8,
+      "compile": false,
+      "max_new_tokens": 128
+    },
+    "repeats": 2,
+    "total_time_sec": {
+      "median": 10.089563623499998,
+      "min": 10.003673660999993,
+      "max": 10.175453586000003
+    },
+    "latency_p50_sec": 0.41793616900000075,
+    "latency_p95_sec": 0.8735413580000113,
+    "docs_per_sec": 1.982246284013435,
+    "tokens_per_sec": 223.99383009351814,
+    "joules_per_doc": 19.666552211867064,
+    "idle_power_w": 28.627199999999995,
+    "compile_time_sec": null,
+    "noisy": false
+  },
+  {
+    "profile_name": "fp16_sdpa_b1_cap64",
+    "status": "success",
+    "error": null,
+    "requested_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 1,
+      "compile": false,
+      "max_new_tokens": 64
+    },
+    "actual_config": {
+      "dtype": "float16",
+      "attn": "sdpa",
+      "batch": 1,
+      "compile": false,
+      "max_new_tokens": 64
+    },
+    "repeats": 2,
+    "total_time_sec": {
+      "median": 32.23214424399998,
+      "min": 31.976817974000028,
+      "max": 32.48747051399994
+    },
+    "latency_p50_sec": 1.5364588600000388,
+    "latency_p95_sec": 1.911725289300068,
+    "docs_per_sec": 0.6204985882601652,
+    "tokens_per_sec": 39.711909648650575,
+    "joules_per_doc": 61.177673014908216,
+    "idle_power_w": 28.627199999999995,
+    "compile_time_sec": null,
+    "noisy": false
+  }
+]

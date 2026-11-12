@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-11-04T23:41:34.724258+00:00",
+  "endpoint": "https://api.meta.ai/v1/chat/completions",
+  "requested_model": "muse-spark-1.3",
+  "advisory": true,
+  "status": "unverified",
+  "reason": "MODEL_API_KEY absent",
+  "source": null
+}
