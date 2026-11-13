@@ -20,4 +20,4 @@ tunix = "tunix.cli:main"
 py-modules = ["app"]
 
 [tool.setuptools.packages.find]
-include = ["tunix*", "optiloop*"]
+include = ["tunix*"]

@@ -101,7 +101,7 @@ workbench. CLI credentials come only from environment variables.
 Paths in `tunix.json` resolve relative to that file, independent of the
 installation location. Results are stored per run, with a `current_session`
 pointer; existing measured JSON/rejection schemas are unchanged. The internal
-`tunix` namespace is canonical; `optiloop` remains as a compatibility alias. Exported measured candidate settings are
+`tunix` namespace is the only supported package namespace. Exported measured candidate settings are
 explicitly NOT APPROVED. No persistent GPU runtime Apply is implemented.
 
 ## Current evidence and honest limitations

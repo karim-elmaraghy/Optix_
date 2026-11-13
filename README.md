@@ -6,7 +6,7 @@
 
 Tunix is a local Python CLI and interactive workbench for benchmarking LLM inference on a Tesla T4. It compares throughput and energy use, validates generated outputs, and makes blocked or rejected experiments visible. Built for the Meta Global AI Developer Hackathon.
 
-[Get started](#quick-start) · [Developer guide](docs/DEVELOPER.md) · [Colab workflow](docs/COLAB_TRANSFER.md) · [Measured evidence](docs/V2_VALIDATION.md)
+[Get started](#quick-start) · [Developer guide](docs/DEVELOPER.md) · [Colab notebook](notebooks/tunix_colab.ipynb) · [Measured evidence](docs/V2_VALIDATION.md)
 
 ## What it does
 
@@ -77,14 +77,14 @@ Use a new output filename outside `results/`. A proposal is not a benchmark resu
 | --- | --- |
 | `tunix/` | CLI, benchmarking, validation, planner, and workbench UI |
 | `app.py` | Dashboard entry point and result presentation |
+| `notebooks/` | Runnable Google Colab workflow |
 | `tests/` | CPU regression tests; optional model-dependent tests |
 | `assets/` | Tunix visual assets |
 | `results/` | Original measured evidence, derived validation, and labeled samples |
 | `docs/` | Setup, Colab, validation, and planner guides |
 | `docs/archive/` | Historical development notes and retired agent tooling |
-| `optiloop/` | Compatibility aliases for older imports and notebooks |
 
-The application now lives on `main`. **Tunix** is the current product and Python package name; Optix and OptiLoop are historical names. Existing `optiloop` imports remain supported during migration. Original evidence and historical Git branches retain their provenance.
+The application now lives on `main`. **Tunix** is the current product and Python package name; Optix and OptiLoop are historical names. Old `optiloop` imports must now be changed to `tunix`; the compatibility package has been removed. See the [migration guide](docs/MIGRATION.md). Original evidence and historical Git branches retain their provenance.
 
 ## Development
 

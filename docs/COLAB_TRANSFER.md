@@ -13,7 +13,7 @@ on Hugging Face first. In a fresh notebook run:
 import os, sys, subprocess, getpass
 from pathlib import Path
 
-repo = Path('/content/Tunix')  # separate checkout; preserves /content/Optix/results
+repo = Path('/content/Tunix')  # preserves any older checkout and its results
 if not repo.exists():
     subprocess.run(['git', 'clone',
                     'https://github.com/karim-elmaraghy/Tunix.git', str(repo)], check=True)
@@ -36,7 +36,8 @@ run = subprocess.run(['tunix', 'benchmark'], check=False)
 print('Benchmark exit:', run.returncode)  # 0=measured, 2=failed gate/execution
 # Export preserves the current run's actual files even if a profile failed.
 # Use a NEW output name for every export; existing ZIPs are never overwritten.
-zip_path = '/content/tunix-results.zip'
+import uuid
+zip_path = '/content/tunix-results-' + uuid.uuid4().hex[:12] + '.zip'
 subprocess.run(['tunix', 'export', '--output', zip_path], check=True)
 from google.colab import files
 files.download(zip_path)
@@ -46,13 +47,16 @@ The CLI invokes the existing real Gate 1 runner with three repeats. It does
 not change the original committed two-repeat evidence or bypass T5/quality.
 No quality-approved winner is inferred from benchmark success.
 
-For your ALREADY completed original V2 run in `/content/Optix/results/`,
-export that directory explicitly, without rerunning or modifying measurements:
+For an already completed run, set `original_results` to its actual directory.
+Export it without rerunning or modifying measurements:
 
 ```python
-subprocess.run(['tunix', 'export', '--session', '/content/Optix/results',
-                '--output', '/content/tunix-original-v2.zip'], check=True)
-files.download('/content/tunix-original-v2.zip')
+original_results = input('Absolute path to the existing results directory: ').strip()
+assert Path(original_results).is_dir(), 'Results directory does not exist'
+original_zip = '/content/tunix-original-' + uuid.uuid4().hex[:12] + '.zip'
+subprocess.run(['tunix', 'export', '--session', original_results,
+                '--output', original_zip], check=True)
+files.download(original_zip)
 ```
 
 Both this export and the original `optiloop_v2_measured_results.zip` are
