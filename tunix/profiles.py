@@ -4,7 +4,7 @@ Shared config schema (Interface, do not alter):
 ``{"dtype": "float32|float16", "attn": "eager|sdpa", "batch": int,
 "compile": bool, "max_new_tokens": int}``
 
-Two baselines are always reported (OPTILOOP_TESTS.md R2):
+Two baselines are always reported (docs/archive/tunix_tests.md R2):
 ``naive_fp32_eager_b1`` (fp32 + eager + batch 1) and
 ``default_fp16_sdpa_b1`` (fp16 + SDPA + batch 1, the competent default).
 Headline speedups are measured against the competent default; the speedup

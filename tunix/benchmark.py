@@ -233,7 +233,7 @@ def load_model(config, model_id=None, device=None):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
-    model_id = model_id or os.environ.get("OPTILOOP_MODEL_ID", MODEL_ID)
+    model_id = model_id or os.environ.get("TUNIX_MODEL_ID", MODEL_ID)
     if device is None:
         device = "cuda" if torch.cuda.is_available() else "cpu"
     dtype = {"float32": torch.float32,

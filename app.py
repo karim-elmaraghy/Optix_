@@ -88,13 +88,13 @@ h3 { font-size: 1rem !important; font-weight: 600 !important; }
 }
 .subtitle { color: var(--muted) !important; font-size: 1rem; max-width: 660px; }
 .section-heading { padding-top: 20px; margin-bottom: 8px; }
-.surface, .optix-card, .gr-group {
+.surface, .tunix-card, .gr-group {
   background: var(--surface) !important;
   border: 1px solid var(--line) !important;
   border-radius: 5px !important;
   box-shadow: none !important;
 }
-.optix-card { padding: 18px 20px !important; }
+.tunix-card { padding: 18px 20px !important; }
 .notice {
   border: 1px solid var(--line);
   border-left: 3px solid var(--accent);
@@ -969,7 +969,7 @@ def _create_evidence_app() -> Any:
 
         gr.Markdown("01  /  OVERVIEW", elem_classes=["section-label section-heading"])
         with gr.Row():
-            with gr.Column(scale=3, elem_classes=["surface", "optix-card"]):
+            with gr.Column(scale=3, elem_classes=["surface", "tunix-card"]):
                 gr.Markdown(
                     "### A careful search for better inference\n\n"
                     "Tunix tests configurations against a competent default, "
@@ -981,7 +981,7 @@ def _create_evidence_app() -> Any:
                     "Numbers below come from saved benchmark results. Missing evidence stays unreported.",
                     elem_classes=["quiet"],
                 )
-            with gr.Column(scale=2, elem_classes=["surface", "optix-card"]):
+            with gr.Column(scale=2, elem_classes=["surface", "tunix-card"]):
                 gpu = gr.Markdown()
 
         gr.Markdown("02  /  EXPERIMENTS", elem_classes=["section-label section-heading"])
@@ -1014,7 +1014,7 @@ def _create_evidence_app() -> Any:
         )
         gr.Markdown("03  /  OPTIMIZE", elem_classes=["section-label section-heading"])
         with gr.Row():
-            with gr.Column(scale=2, elem_classes=["surface", "optix-card"]):
+            with gr.Column(scale=2, elem_classes=["surface", "tunix-card"]):
                 gr.Markdown("### Request an optimization")
                 gr.Markdown(
                     "Runs real Meta API proposals and GPU benchmarks (up to eight experiments plus baselines and batch-1 checks). Set MODEL_API_KEY and HF_TOKEN in the server environment. Failed quality or T5 checks cannot win. No profile is automatically activated.",
@@ -1050,12 +1050,12 @@ def _create_evidence_app() -> Any:
 
         gr.Markdown("04  /  APPLY & ROLLBACK", elem_classes=["section-label section-heading"])
         with gr.Row():
-            with gr.Column(scale=3, elem_classes=["surface", "optix-card"]):
+            with gr.Column(scale=3, elem_classes=["surface", "tunix-card"]):
                 gr.Markdown("### Held-out confirmation")
                 winner = gr.Markdown()
                 confirm_button = gr.Button('Confirm winner on held-out documents')
                 confirm_result = gr.Textbox(label='Held-out status', interactive=False)
-            with gr.Column(scale=2, elem_classes=["surface", "optix-card"]):
+            with gr.Column(scale=2, elem_classes=["surface", "tunix-card"]):
                 gr.Markdown("### Apply state")
                 apply_summary = gr.Markdown()
                 apply_button = gr.Button("Check apply readiness", variant="secondary")

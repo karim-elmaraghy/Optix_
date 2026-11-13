@@ -1,6 +1,6 @@
 # Tunix contributor instructions
 
-- Use `tunix/` for new implementation work. `optiloop/` contains compatibility aliases.
+- Use `tunix/` for all implementation work and imports.
 - Read README.md and the relevant docs before changing behavior.
 - Preserve original `results/*.json` bytes and recorded hashes. Write derived evidence separately.
 - Never present a raw speedup as quality-approved or relax validation thresholds as a cosmetic cleanup.
